@@ -1,20 +1,26 @@
 body {
   background-color: #dacac8;
   display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+
+.tabs {
+  display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 35%;
 }
 
 .window {
   background-color: rgb(226, 226, 226);
   display: flex;
   flex-direction: column;
-  width: 35%;
-  margin: 0 30%;
   padding: 20px;
 }
 
-.window, .minimise, .close, .fullscreen {
+.window, .minimise, .close, .fullscreen, .menu {
   border-bottom: 3px rgb(146, 146, 146) solid;
   border-right: 3px rgb(146, 146, 146) solid;
   border-left: 3px rgb(245, 245, 245) solid;
@@ -34,10 +40,6 @@ body {
 
 .buttons:hover {
   cursor: pointer;
-}
-
-.buttons:hover .close-hover {
-  border: dotted 1px rgb(0, 0, 0);
 }
 
 .minimise, .close, .fullscreen {
@@ -86,4 +88,38 @@ h1 {
   font-size: 30px;
   margin: 0 6px;
   color: white;
+}
+
+/* menu items */
+.menu {
+  background-color: rgb(226, 226, 226);
+  display: flex;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-header {
+  background-color: #3d7256;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 20px 2px;
+}
+
+.menu-list li {
+  padding: 5px 20px;
+}
+
+.menu-list li:hover {
+  background-color: #3d7256;
+}
+
+.menu-header h1 {
+  margin: 0;
+  transform: rotate(-90deg);
 }
