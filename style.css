@@ -1,9 +1,13 @@
 body {
   background-color: #dacac8;
   display: flex;
+  flex-direction: column;
+}
+
+.top {
+  display: flex;
   flex-direction: row;
   gap: 20px;
-  justify-content: center;
 }
 
 .tabs {
@@ -20,7 +24,7 @@ body {
   padding: 20px;
 }
 
-.window, .minimise, .close, .fullscreen, .menu {
+.window, .minimise, .close, .fullscreen, .menu, .bar, .bar-border {
   border-bottom: 3px rgb(146, 146, 146) solid;
   border-right: 3px rgb(146, 146, 146) solid;
   border-left: 3px rgb(245, 245, 245) solid;
@@ -97,9 +101,11 @@ h1 {
 }
 
 .menu-list {
+  width: 80%;
   list-style: none;
   padding: 0;
   margin: 0;
+  align-self: flex-end;
 }
 
 .menu-header {
@@ -117,9 +123,35 @@ h1 {
 
 .menu-list li:hover {
   background-color: #3d7256;
+  color: white;
 }
 
 .menu-header h1 {
   margin: 0;
   transform: rotate(-90deg);
+}
+
+/* bottom bar */
+
+.bar {
+  display: flex;
+  align-items: center;
+  width: 46.8%;
+  background-color: rgb(226, 226, 226);
+}
+
+h3 {
+  font-family: "Jersey 10", sans-serif;
+  margin: 0;
+}
+
+.bar-line {
+  height: 20px;
+  width: 2px;
+  background-color: black;
+}
+
+.bar-border {
+  height: 20px;
+  width: 1px;
 }
