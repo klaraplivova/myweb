@@ -2,6 +2,8 @@ body {
   background-color: #dacac8;
   display: flex;
   flex-direction: column;
+  width: 50%;
+  justify-content: center;
 }
 
 .top {
@@ -14,7 +16,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 35%;
 }
 
 .window {
@@ -135,23 +136,36 @@ h1 {
 
 .bar {
   display: flex;
-  align-items: center;
-  width: 46.8%;
+  align-items: flex-end;
+ 
   background-color: rgb(226, 226, 226);
+  gap: 5px;
 }
 
 h3 {
   font-family: "Jersey 10", sans-serif;
   margin: 0;
+  padding: 3px;
+  border-bottom: 2px rgb(245, 245, 245) solid;
+  border-right: 2px rgb(245, 245, 245) solid;
+  border-left: 2px rgb(146, 146, 146) solid;
+  border-top: 2px rgb(146, 146, 146) solid;
+  align-self: center;
+  background-color: rgb(189, 189, 189);
 }
 
 .bar-line {
-  height: 20px;
+  height: 30px;
   width: 2px;
-  background-color: black;
+  background-color: rgb(146, 146, 146);
 }
 
 .bar-border {
   height: 20px;
   width: 1px;
+  align-self: center;
+}
+
+.bar img {
+  margin: 0 5px;
 }
