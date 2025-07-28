@@ -16,9 +16,9 @@
                 <h1>Menu</h1>
             </div>
             <ul class="menu-list">
-                <li><u>A</u>bout</li>
-                <li><u>P</u>rojects</li>
-                <li><u>R</u>eading log</li>
+                <li><a href="#" onclick="loadPage('about.html')"><u>A</u>bout</a></li>
+                <li><a href="#" onclick="loadPage('projects.html')"><u>P</u>rojects</a></li>
+                <li><a href="#" onclick="loadPage('readinglog.html')"><u>R</u>eading log</a></li>
             </ul>
         </section>
         <section class="tabs">
@@ -37,7 +37,7 @@
                         </div>
                     </div>
                 </section>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptate dolores quaerat, neque dignissimos quod unde maiores nobis fugit soluta officia iure possimus, assumenda quae excepturi natus vero sed ex.</p>
+                <iframe id="main-content" src="about.html"></iframe>
             </section>
             <section class="window">
                 <section class="window-header">
@@ -67,5 +67,6 @@
         <div class="bar-line"></div>
         <div class="bar-border"></div>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
