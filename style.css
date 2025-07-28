@@ -124,6 +124,13 @@ h1 {
 
 .menu-list li:hover {
   background-color: #3d7256;
+}
+
+.menu-list li a {
+  color: black;
+}
+
+.menu-list li:hover a {
   color: white;
 }
 
