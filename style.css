@@ -25,7 +25,7 @@ body {
   padding: 20px;
 }
 
-.window, .minimise, .close, .fullscreen, .menu, .bar, .bar-border {
+.window, .minimise, .close, .fullscreen, .menu, .bar, .bar-border, .current-tab {
   border-bottom: 3px rgb(146, 146, 146) solid;
   border-right: 3px rgb(146, 146, 146) solid;
   border-left: 3px rgb(245, 245, 245) solid;
@@ -175,4 +175,8 @@ h3 {
 
 .bar img {
   margin: 0 5px;
+}
+
+iframe {
+  border: none;
 }
