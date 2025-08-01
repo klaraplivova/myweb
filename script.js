@@ -3,7 +3,7 @@ function loadPage(page) {
 }
 
 window.addEventListener('message', function(event) {
-    if (event.data && event.data.type === 'updateTitle') {
-        document.getElementsByClassName('current-tab').textContent = event.data.title;
-    }
-});
+      if (event.data && event.data.type === 'updateTitle') {
+        document.querySelector('.page-title').textContent = event.data.title;
+      }
+    });
