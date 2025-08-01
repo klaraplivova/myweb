@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
 </head>
-<body>
+<body data-page-title="About">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, dolorem voluptatem? Iusto distinctio maxime quo laudantium animi, deserunt, est soluta reprehenderit nisi ratione consequatur laboriosam velit earum quisquam officia nihil!</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt esse maiores natus ut nisi perferendis saepe quisquam voluptates, optio, maxime cumque tenetur minima dolorum modi magni odit, odio iusto ducimus.</p>
+    <script>
+        window.parent.postMessage({
+            type: 'updateTitle',
+            title: 'About'
+        }, '*');
+    </script>
 </body>
 </html>
